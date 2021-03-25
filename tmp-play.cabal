@@ -1,4 +1,4 @@
-cabal-version:      2.4
+cabal-version:      3.4
 name:               tmp-play
 version:            0.1.0.0
 
@@ -15,6 +15,7 @@ version:            0.1.0.0
 -- license:
 author:             Alistair Burrowes
 maintainer:         alistair.burrowes@gmail.com
+build-type:          Simple
 
 -- A copyright notice.
 -- copyright:
@@ -22,15 +23,12 @@ maintainer:         alistair.burrowes@gmail.com
 extra-source-files: CHANGELOG.md
 
 library
-
-    -- Modules included in this executable, other than Main.
-    other-modules:
-        Part1
+    hs-source-dirs:   src
+    other-modules: Part1
 
     -- LANGUAGE extensions used by modules in this package.
     -- other-extensions:
+    default-language: Haskell2010
     build-depends:
         base ^>=4.15.0.0,
         ghcid >= 0.8.7 && < 0.9
-    hs-source-dirs:   src
-    default-language: Haskell2010
