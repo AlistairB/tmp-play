@@ -24,7 +24,7 @@ extra-source-files: CHANGELOG.md
 
 library
     hs-source-dirs:   src
-    other-modules: Part1
+    other-modules: Part1, Part2
 
     -- LANGUAGE extensions used by modules in this package.
     -- other-extensions:
