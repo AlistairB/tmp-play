@@ -21,8 +21,7 @@ maintainer:         alistair.burrowes@gmail.com
 -- category:
 extra-source-files: CHANGELOG.md
 
-executable tmp-play
-    main-is:          Main.hs
+library
 
     -- Modules included in this executable, other than Main.
     other-modules:
@@ -33,5 +32,5 @@ executable tmp-play
     build-depends:
         base ^>=4.15.0.0,
         ghcid >= 0.8.7 && < 0.9
-    hs-source-dirs:   app
+    hs-source-dirs:   src
     default-language: Haskell2010
